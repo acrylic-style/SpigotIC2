@@ -1,0 +1,7 @@
+name: SpigotIC2
+main: net.azisaba.ic2.IC2Plugin
+version: 1.0.0-SNAPSHOT
+api-version: 1.13
+commands:
+  ic2:
+    permission: ic2.command

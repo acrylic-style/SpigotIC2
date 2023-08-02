@@ -1,0 +1,17 @@
+custom-model-data:
+  forge-hammer: 0  # iron_hoe
+  cutter: 0 # iron_hoe
+  iron-plate: 0 # iron_ingot
+  iron-casing: 0 # iron_ingot
+  hv-cable: 0 # iron_ingot
+  insulated-hv-cable: 0 # iron_ingot
+  copper-plate: 0 # copper_ingot
+  copper-cable: 0 # copper_ingot
+  insulated-copper-cable: 0 # copper_ingot
+  electronic-circuit: 0 # iron_ingot
+  coil: 0 # iron_ingot
+  electric-motor: 0 # iron_ingot
+  re-battery: 0 # saddle
+  power-unit: 0 # iron_ingot
+  mining-drill: 0 # iron_pickaxe
+  diamond-drill: 0 # diamond_pickaxe
