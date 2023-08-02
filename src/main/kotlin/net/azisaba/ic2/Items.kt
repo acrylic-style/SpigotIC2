@@ -30,6 +30,18 @@ object Items {
         }
     })
     val VERY_BIG_MOTOR = register(ItemVeryBigMotor, createItemStack(Material.IRON_INGOT, "クソデカモーター", "very-big-motor"))
+    val NETHERITE_DRILL_LUCK = register(ItemNetheriteDrillLuck, createItemStack(Material.NETHERITE_PICKAXE, "ネザライトドリル", "netherite-drill-luck").apply {
+        itemMeta = itemMeta!!.apply {
+            addEnchant(Enchantment.DIG_SPEED, 10, true)
+            addEnchant(Enchantment.LOOT_BONUS_BLOCKS, 4, true)
+        }
+    })
+    val NETHERITE_DRILL_SILK = register(ItemNetheriteDrillSilk, createItemStack(Material.NETHERITE_PICKAXE, "ネザライトドリル", "netherite-drill-silk").apply {
+        itemMeta = itemMeta!!.apply {
+            addEnchant(Enchantment.DIG_SPEED, 10, true)
+            addEnchant(Enchantment.SILK_TOUCH, 1, true)
+        }
+    })
 
     private fun createItemStack(type: Material, displayName: String, customModelDataKey: String = "", customModelData: Int? = null, amount: Int = 1, lore: List<String> = emptyList()) =
         ItemStack(type, amount).apply {

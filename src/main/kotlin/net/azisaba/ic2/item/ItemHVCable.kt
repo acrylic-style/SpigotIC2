@@ -6,7 +6,7 @@ import net.azisaba.ic2.util.register
 
 object ItemHVCable : ICItem() {
     override fun registerRecipe() {
-        shapelessRecipe(2)
+        shapelessRecipe(1)
             .addIngredient(Items.CUTTER)
             .addIngredient(Items.IRON_PLATE)
             .build(IC2Plugin.key("hv_cable"))

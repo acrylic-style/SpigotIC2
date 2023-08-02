@@ -6,7 +6,7 @@ import net.azisaba.ic2.util.register
 
 object ItemCopperCable : ICItem() {
     override fun registerRecipe() {
-        shapelessRecipe(2)
+        shapelessRecipe(1)
             .addIngredient(Items.CUTTER)
             .addIngredient(Items.COPPER_PLATE)
             .build(IC2Plugin.key("copper_cable"))

@@ -6,7 +6,7 @@ import net.azisaba.ic2.util.register
 
 object ItemIronCasing : ICItem() {
     override fun registerRecipe() {
-        shapelessRecipe(2)
+        shapelessRecipe(1)
             .addIngredient(Items.FORGE_HAMMER)
             .addIngredient(Items.IRON_PLATE)
             .build(IC2Plugin.key("iron_casing"))
