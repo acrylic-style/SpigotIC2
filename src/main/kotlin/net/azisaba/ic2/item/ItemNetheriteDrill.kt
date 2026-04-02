@@ -6,7 +6,7 @@ import net.azisaba.ic2.util.register
 import org.bukkit.*
 import org.bukkit.inventory.ItemStack
 
-object ItemNetheriteDrillLuck : ItemDrill() {
+object ItemNetheriteDrill : ItemDrill() {
     override fun registerRecipe() {
         shapedRecipe(
             "RDR",

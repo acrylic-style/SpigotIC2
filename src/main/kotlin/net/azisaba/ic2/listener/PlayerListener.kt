@@ -24,7 +24,7 @@ object PlayerListener : Listener {
         val matrix = arrayOfNulls<ItemStack>(e.inventory.matrix.size)
         e.inventory.matrix.forEachIndexed { index, item ->
             if (Items.FORGE_HAMMER.isSimilar(item) || Items.CUTTER.isSimilar(item)) {
-                matrix[index] = item.clone()
+                matrix[index] = item?.clone()
             }
         }
         if (matrix.any { it != null }) {

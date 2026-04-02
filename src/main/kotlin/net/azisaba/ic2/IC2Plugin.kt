@@ -11,13 +11,9 @@ class IC2Plugin : JavaPlugin() {
     companion object {
         lateinit var itemIdKey: NamespacedKey
 
-        fun key(key: String) = NamespacedKey(getInstance(), key)
+        fun key(key: String) = NamespacedKey("ic2", key)
 
         fun getInstance() = getPlugin(IC2Plugin::class.java)
-
-        fun getCustomModelData(key: String) = getInstance().config.getInt("custom-model-data.$key", -1).let {
-            if (it == -1) null else it
-        }
     }
 
     override fun onLoad() {

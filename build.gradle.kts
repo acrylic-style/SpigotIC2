@@ -1,6 +1,7 @@
 plugins {
-    kotlin("jvm") version "1.9.0"
-    id("com.github.johnrengelman.shadow") version "8.1.1"
+    kotlin("jvm") version "2.3.20"
+    id("com.gradleup.shadow") version "9.4.1"
+    id("io.papermc.paperweight.userdev") version "2.0.0-beta.19"
 }
 
 group = "net.azisaba"
@@ -11,8 +12,10 @@ repositories {
     maven { url = uri("https://hub.spigotmc.org/nexus/content/repositories/public/") }
 }
 
+java.toolchain.languageVersion.set(JavaLanguageVersion.of(21))
+
 dependencies {
-    compileOnly("org.spigotmc:spigot-api:1.20.1-R0.1-SNAPSHOT")
+    paperweight.paperDevBundle("1.21.11-R0.1-SNAPSHOT")
     testImplementation(kotlin("test"))
 }
 
@@ -21,5 +24,5 @@ tasks.test {
 }
 
 kotlin {
-    jvmToolchain(8)
+    jvmToolchain(21)
 }
